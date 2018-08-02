@@ -289,7 +289,7 @@ header {
             opacity: 1;
         }
     }
-    @media (min-width: 768px) {
+    @media screen and (max-width: $flex-break-dual) {
         .portfolio-box-caption {
             .portfolio-box-caption-content {
                 .project-category {
@@ -301,7 +301,7 @@ header {
             }
         }
     }
-    @media (max-width: 768px), (hover: none) {
+    @media screen and (max-width: $flex-break-dual), (hover: none) {
         .portfolio-box-caption {
             opacity: .9;
             height: 30%;
@@ -363,12 +363,12 @@ header {
   align-items: center;
 }
 .flex-cell {
-  flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+  flex: 0 0 33.3%;                       /* don't grow, don't shrink, width */
   @media screen and (max-width: $flex-break-dual) {
-    flex: 0 0 45%;
+    flex: 0 0 50%;
   }
   @media screen and (max-width: $flex-break-single) {
-    flex: 0 0 90%;
+    flex: 0 0 100%;
   }
   margin-top: 1em;
   margin-bottom: 1em;
